@@ -8,9 +8,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 # ------------------------- PATHS & LOADING -------------------------
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR /  r"C:\Users\User\Desktop\BroadwayProject\Project\best_churn_model_GradientBoosting.pkl"
-DATA_PATH = BASE_DIR / r"C:\Users\User\Desktop\BroadwayProject\Project\telco.csv"      # optional, for EDA
-
+MODEL_PATH = BASE_DIR / "best_churn_model_GradientBoosting.pkl"
+DATA_PATH = BASE_DIR / "telco.csv"  
 
 @st.cache_resource
 def load_model():
